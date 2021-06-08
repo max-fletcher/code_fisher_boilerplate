@@ -1,6 +1,7 @@
 <template>
   <div>
-     Home Page
+     Page Not Found !
+      404 Error !!
   </div>
 </template>
 
