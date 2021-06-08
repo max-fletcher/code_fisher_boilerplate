@@ -4,4 +4,5 @@
     <router-link to="/" exact> Go To Home </router-link>
     <router-link to="/about"> About Page </router-link>
     <router-view></router-view>
+    <App></App>
 @endsection
