@@ -1,15 +1,23 @@
 <template>
-  <div>
-     Home Page
-  </div>
+    <div>
+        <v-row>
+            <v-col cols="12" sm="2">
+                <v-sheet rounded="lg">
+                    Home Page
+                </v-sheet>
+            </v-col>
+
+            <v-col cols="12" sm="8">
+                <v-sheet rounded="lg"> 
+                   <!--  -->
+                </v-sheet>
+            </v-col>
+        </v-row>
+    </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
-<style>
-
-</style>
+<style></style>
