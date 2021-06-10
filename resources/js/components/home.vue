@@ -1,18 +1,15 @@
 <template>
     <div>
-        <v-row>
-            <v-col cols="12" sm="2">
-                <v-sheet rounded="lg">
-                    Home Page
-                </v-sheet>
+        <v-card class="mx-auto mt-2" color="purple darken-1" min-height="200px" max-height="400">            
+            <v-col align="center">
+                <v-card-text class="text-h2 font-weight-bold">
+                    This is a Home Page
+                </v-card-text>
+                <v-card-text class="text-h6 font-weight-regular">
+                    A Home Page For All Home Pages !!
+                </v-card-text>
             </v-col>
-
-            <v-col cols="12" sm="8">
-                <v-sheet rounded="lg"> 
-                   <!--  -->
-                </v-sheet>
-            </v-col>
-        </v-row>
+        </v-card>
     </div>
 </template>
 
