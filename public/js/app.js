@@ -1953,16 +1953,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // import TopNav from './topnav'
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -1985,6 +1975,101 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2249,30 +2334,6 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, ".theme--light.v-card {\n  background-color: #FFFFFF;\n  color: rgba(0, 0, 0, 0.87);\n}\n.theme--light.v-card > .v-card__text,\n.theme--light.v-card .v-card__subtitle {\n  color: rgba(0, 0, 0, 0.6);\n}\n\n.theme--dark.v-card {\n  background-color: #1E1E1E;\n  color: #FFFFFF;\n}\n.theme--dark.v-card > .v-card__text,\n.theme--dark.v-card .v-card__subtitle {\n  color: rgba(255, 255, 255, 0.7);\n}\n\n.v-sheet.v-card {\n  border-radius: 4px;\n}\n.v-sheet.v-card:not(.v-sheet--outlined) {\n  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);\n}\n.v-sheet.v-card.v-sheet--shaped {\n  border-radius: 24px 4px;\n}\n\n.v-card {\n  border-width: thin;\n  display: block;\n  max-width: 100%;\n  outline: none;\n  text-decoration: none;\n  transition-property: box-shadow, opacity;\n  overflow-wrap: break-word;\n  position: relative;\n  white-space: normal;\n}\n.v-card > *:first-child:not(.v-btn):not(.v-chip),\n.v-card > .v-card__progress + *:not(.v-btn):not(.v-chip) {\n  border-top-left-radius: inherit;\n  border-top-right-radius: inherit;\n}\n.v-card > *:last-child:not(.v-btn):not(.v-chip) {\n  border-bottom-left-radius: inherit;\n  border-bottom-right-radius: inherit;\n}\n\n.v-card__progress {\n  top: 0;\n  left: 0;\n  right: 0;\n  overflow: hidden;\n}\n\n.v-card__subtitle + .v-card__text {\n  padding-top: 0;\n}\n\n.v-card__subtitle,\n.v-card__text {\n  font-size: 0.875rem;\n  font-weight: 400;\n  line-height: 1.375rem;\n  letter-spacing: 0.0071428571em;\n}\n\n.v-card__subtitle,\n.v-card__text,\n.v-card__title {\n  padding: 16px;\n}\n\n.v-card__title {\n  align-items: center;\n  display: flex;\n  flex-wrap: wrap;\n  font-size: 1.25rem;\n  font-weight: 500;\n  letter-spacing: 0.0125em;\n  line-height: 2rem;\n  word-break: break-all;\n}\n.v-card__title + .v-card__subtitle,\n.v-card__title + .v-card__text {\n  padding-top: 0;\n}\n.v-card__title + .v-card__subtitle {\n  margin-top: -16px;\n}\n\n.v-card__text {\n  width: 100%;\n}\n\n.v-card__actions {\n  align-items: center;\n  display: flex;\n  padding: 8px;\n}\n.v-card__actions > .v-btn.v-btn {\n  padding: 0 8px;\n}\n.v-application--is-ltr .v-card__actions > .v-btn.v-btn + .v-btn {\n  margin-left: 8px;\n}\n.v-application--is-ltr .v-card__actions > .v-btn.v-btn .v-icon--left {\n  margin-left: 4px;\n}\n.v-application--is-ltr .v-card__actions > .v-btn.v-btn .v-icon--right {\n  margin-right: 4px;\n}\n.v-application--is-rtl .v-card__actions > .v-btn.v-btn + .v-btn {\n  margin-right: 8px;\n}\n.v-application--is-rtl .v-card__actions > .v-btn.v-btn .v-icon--left {\n  margin-right: 4px;\n}\n.v-application--is-rtl .v-card__actions > .v-btn.v-btn .v-icon--right {\n  margin-left: 4px;\n}\n\n.v-card--flat {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12) !important;\n}\n\n.v-sheet.v-card--hover {\n  cursor: pointer;\n  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);\n}\n.v-sheet.v-card--hover:hover, .v-sheet.v-card--hover:focus {\n  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);\n}\n\n.v-card--link {\n  cursor: pointer;\n}\n.v-card--link .v-chip {\n  cursor: pointer;\n}\n.v-card--link:focus:before {\n  opacity: 0.08;\n}\n.v-card--link:before {\n  background: currentColor;\n  bottom: 0;\n  content: \"\";\n  left: 0;\n  opacity: 0;\n  pointer-events: none;\n  position: absolute;\n  right: 0;\n  top: 0;\n  transition: 0.2s opacity;\n}\n\n.v-card--disabled {\n  pointer-events: none;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n.v-card--disabled > *:not(.v-card__progress) {\n  opacity: 0.6;\n  transition: inherit;\n}\n\n.v-card--loading {\n  overflow: hidden;\n}\n\n.v-card--raised {\n  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);\n}", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ".theme--light.v-footer {\n  background-color: #f5f5f5;\n  color: rgba(0, 0, 0, 0.87);\n}\n\n.theme--dark.v-footer {\n  background-color: #272727;\n  color: #FFFFFF;\n}\n\n.v-sheet.v-footer {\n  border-radius: 0;\n}\n.v-sheet.v-footer:not(.v-sheet--outlined) {\n  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);\n}\n.v-sheet.v-footer.v-sheet--shaped {\n  border-radius: 24px 0;\n}\n\n.v-footer {\n  align-items: center;\n  display: flex;\n  flex: 0 1 auto !important;\n  flex-wrap: wrap;\n  padding: 6px 16px;\n  position: relative;\n  transition-duration: 0.2s;\n  transition-property: background-color, left, right;\n  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);\n}\n.v-footer:not([data-booted=true]) {\n  transition: none !important;\n}\n\n.v-footer--absolute,\n.v-footer--fixed {\n  z-index: 3;\n}\n\n.v-footer--absolute {\n  position: absolute;\n}\n.v-footer--absolute:not(.v-footer--inset) {\n  width: 100%;\n}\n\n.v-footer--fixed {\n  position: fixed;\n}\n\n.v-footer--padless {\n  padding: 0px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -20512,7 +20573,15 @@ var render = function() {
         [
           _c(
             "v-app-bar",
-            { attrs: { app: "", color: "white", flat: "" } },
+            {
+              attrs: {
+                app: "",
+                color: "white",
+                flat: "",
+                elevation: "3",
+                dense: ""
+              }
+            },
             [
               _c("v-app-bar-nav-icon", {
                 staticClass: "hidden-md-and-up",
@@ -20529,15 +20598,18 @@ var render = function() {
                 [
                   _c(
                     "v-tab",
-                    { attrs: { to: "/", exact: "" } },
+                    {
+                      staticClass: "deep-purple--text",
+                      attrs: { to: "/", exact: "" }
+                    },
                     [
-                      _c("v-icon", { attrs: { left: "" } }, [
-                        _vm._v(
-                          "\n                        mdi-home\n                    "
-                        )
-                      ]),
+                      _c(
+                        "v-icon",
+                        { attrs: { left: "", color: "deep-purple" } },
+                        [_vm._v("mdi-home")]
+                      ),
                       _vm._v(" "),
-                      _vm._v("\n                    Home\n                ")
+                      _vm._v("\n               Home\n            ")
                     ],
                     1
                   ),
@@ -20547,22 +20619,16 @@ var render = function() {
                     { attrs: { to: "/about" } },
                     [
                       _c("v-icon", { attrs: { left: "" } }, [
-                        _vm._v(
-                          "\n                        mdi-information\n                    "
-                        )
+                        _vm._v("mdi-information")
                       ]),
-                      _vm._v("\n                    About\n                ")
+                      _vm._v("About\n            ")
                     ],
                     1
                   ),
                   _vm._v(" "),
-                  _c("v-tab", [
-                    _vm._v("\n                    Link 1\n                ")
-                  ]),
+                  _c("v-tab", [_vm._v("Link 1")]),
                   _vm._v(" "),
-                  _c("v-tab", [
-                    _vm._v("\n                    Logout\n                ")
-                  ])
+                  _c("v-tab", [_vm._v("Logout")])
                 ],
                 1
               )
@@ -20650,7 +20716,13 @@ var render = function() {
                         [
                           _c(
                             "v-sheet",
-                            { attrs: { rounded: "lg", height: "90vh" } },
+                            {
+                              attrs: {
+                                rounded: "lg",
+                                height: "auto",
+                                elevation: "5"
+                              }
+                            },
                             [
                               _c(
                                 "div",
@@ -20663,21 +20735,20 @@ var render = function() {
                                       _c(
                                         "v-list-item-group",
                                         {
-                                          model: {
-                                            value: _vm.group,
-                                            callback: function($$v) {
-                                              _vm.group = $$v
-                                            },
-                                            expression: "group"
+                                          attrs: {
+                                            "active-class":
+                                              "deep-purple--text text--accent-4"
                                           }
                                         },
                                         [
                                           _c(
                                             "v-list-item",
                                             [
-                                              _c("v-list-item-title", [
-                                                _vm._v("Sidebar Item 1")
-                                              ])
+                                              _c(
+                                                "v-list-item-title",
+                                                { staticClass: "text-center" },
+                                                [_vm._v("Sidebar Item 1")]
+                                              )
                                             ],
                                             1
                                           ),
@@ -20685,9 +20756,11 @@ var render = function() {
                                           _c(
                                             "v-list-item",
                                             [
-                                              _c("v-list-item-title", [
-                                                _vm._v("Sidebar item 2")
-                                              ])
+                                              _c(
+                                                "v-list-item-title",
+                                                { staticClass: "text-center" },
+                                                [_vm._v("Sidebar item 2")]
+                                              )
                                             ],
                                             1
                                           )
@@ -20714,7 +20787,11 @@ var render = function() {
                             "v-sheet",
                             {
                               staticClass: "purple lighten-4",
-                              attrs: { rounded: "lg", height: "90vh" }
+                              attrs: {
+                                rounded: "lg",
+                                height: "auto",
+                                elevation: "5"
+                              }
                             },
                             [_c("router-view", { staticClass: "px-5 py-5" })],
                             1
@@ -20724,26 +20801,6 @@ var render = function() {
                       )
                     ],
                     1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "v-footer",
-            { attrs: { app: "", height: "50vh", color: "white" } },
-            [
-              _c(
-                "v-row",
-                { attrs: { justify: "center" } },
-                [
-                  _c(
-                    "v-col",
-                    { attrs: { align: "center", text: "grey darken-1" } },
-                    [_c("h6", { staticClass: "display-1" }, [_vm._v("Footer")])]
                   )
                 ],
                 1
@@ -20788,29 +20845,228 @@ var render = function() {
         "v-card",
         {
           staticClass: "mx-auto mt-2",
-          attrs: {
-            color: "purple darken-1",
-            "min-height": "200px",
-            "max-height": "400"
-          }
+          attrs: { color: "purple darken-1", height: "auto" }
         },
         [
           _c(
             "v-col",
             { attrs: { align: "center" } },
             [
-              _c("v-card-text", { staticClass: "text-h2 font-weight-bold" }, [
-                _vm._v("\n                This is a Home Page\n            ")
-              ]),
+              _c(
+                "v-card-text",
+                {
+                  staticClass:
+                    "text-h2 font-weight-bold teal--text text--accent-3"
+                },
+                [_vm._v("This is a Home Page")]
+              ),
               _vm._v(" "),
               _c(
                 "v-card-text",
-                { staticClass: "text-h6 font-weight-regular" },
+                {
+                  staticClass:
+                    "text-h6 font-weight-regular cyan--text text--accent-3"
+                },
+                [_vm._v("A Home Page For All Home Pages !!")]
+              )
+            ],
+            1
+          )
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-row",
+        { staticClass: "my-2" },
+        [
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "4" } },
+            [
+              _c(
+                "v-card",
+                { staticClass: "blue lighten-3" },
                 [
-                  _vm._v(
-                    "\n                A Home Page For All Home Pages !!\n            "
+                  _c(
+                    "v-list-item",
+                    { attrs: { "three-line": "" } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "text-overline text-center mb-4" },
+                            [_vm._v("OVERLINE")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-title",
+                            { staticClass: "text-h5 mb-1 text-center" },
+                            [_vm._v("Headline 5")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-subtitle",
+                            { staticClass: "text-center" },
+                            [
+                              _vm._v(
+                                "\n                     Greyhound divisely\n                     hello coldly\n                     fonwderfully Lorem ipsum\n                     dolor sit amet\n                     consectetur adipisicing\n                     elit. Aspernatur\n                     temporibus omnis\n                     quisquam, laborum\n                     pariatur vero adipisci\n                     culpa quae dicta quia\n                     provident exercitationem\n                     veritatis at delectus\n                     modi consequuntur quis\n                     unde\n                     consectetur?\n                  "
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-actions",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { outlined: "", rounded: "", text: "" }
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ],
+                    1
                   )
-                ]
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "4" } },
+            [
+              _c(
+                "v-card",
+                { staticClass: "amber lighten-3" },
+                [
+                  _c(
+                    "v-list-item",
+                    { attrs: { "three-line": "" } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "text-overline text-center mb-4" },
+                            [_vm._v("OVERLINE")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-title",
+                            { staticClass: "text-h5 mb-1 text-center" },
+                            [_vm._v("Headline 5")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-subtitle",
+                            { staticClass: "text-center" },
+                            [
+                              _vm._v(
+                                "\n                     Greyhound divisely\n                     hello coldly\n                     fonwderfully Lorem ipsum\n                     dolor sit amet\n                     consectetur adipisicing\n                     elit. Aspernatur\n                     temporibus omnis\n                     quisquam, laborum\n                     pariatur vero adipisci\n                     culpa quae dicta quia\n                     provident exercitationem\n                     veritatis at delectus\n                     modi consequuntur quis\n                     unde\n                     consectetur?\n                  "
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-actions",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { outlined: "", rounded: "", text: "" }
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-col",
+            { attrs: { cols: "12", sm: "4" } },
+            [
+              _c(
+                "v-card",
+                { staticClass: "pink lighten-3" },
+                [
+                  _c(
+                    "v-list-item",
+                    { attrs: { "three-line": "" } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [
+                          _c(
+                            "div",
+                            { staticClass: "text-overline text-center mb-4" },
+                            [_vm._v("OVERLINE")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-title",
+                            { staticClass: "text-h5 mb-1 text-center" },
+                            [_vm._v("Headline 5")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "v-list-item-subtitle",
+                            { staticClass: "text-center" },
+                            [
+                              _vm._v(
+                                "\n                     Greyhound divisely\n                     hello coldly\n                     fonwderfully Lorem ipsum\n                     dolor sit amet\n                     consectetur adipisicing\n                     elit. Aspernatur\n                     temporibus omnis\n                     quisquam, laborum\n                     pariatur vero adipisci\n                     culpa quae dicta quia\n                     provident exercitationem\n                     veritatis at delectus\n                     modi consequuntur quis\n                     unde\n                     consectetur?\n                  "
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-card-actions",
+                    [
+                      _c(
+                        "v-btn",
+                        {
+                          staticClass: "mx-auto",
+                          attrs: { outlined: "", rounded: "" }
+                        },
+                        [_vm._v("Button")]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
               )
             ],
             1
@@ -24220,27 +24476,6 @@ if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
 var add = __webpack_require__(/*! !../../../../vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
 var update = add("599ac388", content, false, {});
-// Hot Module Replacement
-if(false) {}
-
-/***/ }),
-
-/***/ "./node_modules/vuetify/src/components/VFooter/VFooter.sass":
-/*!******************************************************************!*\
-  !*** ./node_modules/vuetify/src/components/VFooter/VFooter.sass ***!
-  \******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(/*! !!../../../../css-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[1]!../../../../postcss-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[2]!../../../../sass-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[3]!./VFooter.sass */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-15[0].rules[0].use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass");
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.id, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__(/*! !../../../../vue-style-loader/lib/addStylesClient.js */ "./node_modules/vue-style-loader/lib/addStylesClient.js").default
-var update = add("754b661e", content, false, {});
 // Hot Module Replacement
 if(false) {}
 
@@ -37105,18 +37340,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VAppBar */ "./node_modules/vuetify/lib/components/VAppBar/VAppBarNavIcon.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VCol.js");
 /* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VContainer.js");
-/* harmony import */ var vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VFooter */ "./node_modules/vuetify/lib/components/VFooter/VFooter.js");
-/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/VIcon.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VList.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VListItem.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VListItemGroup.js");
-/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
-/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/VMain.js");
-/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/VNavigationDrawer.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VRow.js");
-/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/VSheet.js");
-/* harmony import */ var vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vuetify/lib/components/VTabs */ "./node_modules/vuetify/lib/components/VTabs/VTab.js");
-/* harmony import */ var vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! vuetify/lib/components/VTabs */ "./node_modules/vuetify/lib/components/VTabs/VTabs.js");
+/* harmony import */ var vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VIcon */ "./node_modules/vuetify/lib/components/VIcon/VIcon.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VList.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VListItem.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VListItemGroup.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! vuetify/lib/components/VMain */ "./node_modules/vuetify/lib/components/VMain/VMain.js");
+/* harmony import */ var vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! vuetify/lib/components/VNavigationDrawer */ "./node_modules/vuetify/lib/components/VNavigationDrawer/VNavigationDrawer.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VRow.js");
+/* harmony import */ var vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! vuetify/lib/components/VSheet */ "./node_modules/vuetify/lib/components/VSheet/VSheet.js");
+/* harmony import */ var vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! vuetify/lib/components/VTabs */ "./node_modules/vuetify/lib/components/VTabs/VTab.js");
+/* harmony import */ var vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! vuetify/lib/components/VTabs */ "./node_modules/vuetify/lib/components/VTabs/VTabs.js");
 
 
 
@@ -37153,8 +37387,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 
 
-
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__.default,VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__.default,VAppBarNavIcon: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_6__.default,VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__.default,VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__.default,VFooter: vuetify_lib_components_VFooter__WEBPACK_IMPORTED_MODULE_9__.default,VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_10__.default,VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_11__.default,VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__.default,VListItemGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_13__.default,VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_14__.VListItemTitle,VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_15__.default,VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_16__.default,VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_17__.default,VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_18__.default,VTab: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_19__.default,VTabs: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_20__.default})
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VApp: vuetify_lib_components_VApp__WEBPACK_IMPORTED_MODULE_4__.default,VAppBar: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_5__.default,VAppBarNavIcon: vuetify_lib_components_VAppBar__WEBPACK_IMPORTED_MODULE_6__.default,VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__.default,VContainer: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_8__.default,VIcon: vuetify_lib_components_VIcon__WEBPACK_IMPORTED_MODULE_9__.default,VList: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_10__.default,VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_11__.default,VListItemGroup: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_12__.default,VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_13__.VListItemTitle,VMain: vuetify_lib_components_VMain__WEBPACK_IMPORTED_MODULE_14__.default,VNavigationDrawer: vuetify_lib_components_VNavigationDrawer__WEBPACK_IMPORTED_MODULE_15__.default,VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_16__.default,VSheet: vuetify_lib_components_VSheet__WEBPACK_IMPORTED_MODULE_17__.default,VTab: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_18__.default,VTabs: vuetify_lib_components_VTabs__WEBPACK_IMPORTED_MODULE_19__.default})
 
 
 /* hot reload */
@@ -37180,9 +37413,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
 /* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/VCard.js");
-/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
-/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VCol.js");
+/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/VBtn.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/VCard.js");
+/* harmony import */ var vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VCard */ "./node_modules/vuetify/lib/components/VCard/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VCol.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/VListItem.js");
+/* harmony import */ var vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vuetify/lib/components/VList */ "./node_modules/vuetify/lib/components/VList/index.js");
+/* harmony import */ var vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! vuetify/lib/components/VGrid */ "./node_modules/vuetify/lib/components/VGrid/VRow.js");
 
 
 
@@ -37206,7 +37443,14 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 
 
-_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_4__.default,VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__.VCardText,VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_6__.default})
+
+
+
+
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__.default,VCard: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_5__.default,VCardActions: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__.VCardActions,VCardText: vuetify_lib_components_VCard__WEBPACK_IMPORTED_MODULE_6__.VCardText,VCol: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_7__.default,VListItem: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_8__.default,VListItemContent: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__.VListItemContent,VListItemSubtitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__.VListItemSubtitle,VListItemTitle: vuetify_lib_components_VList__WEBPACK_IMPORTED_MODULE_9__.VListItemTitle,VRow: vuetify_lib_components_VGrid__WEBPACK_IMPORTED_MODULE_10__.default})
 
 
 /* hot reload */
@@ -38122,116 +38366,6 @@ const VCardTitle = (0,_util_helpers__WEBPACK_IMPORTED_MODULE_0__.createSimpleFun
   }
 });
 //# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ "./node_modules/vuetify/lib/components/VFooter/VFooter.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/vuetify/lib/components/VFooter/VFooter.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _src_components_VFooter_VFooter_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../src/components/VFooter/VFooter.sass */ "./node_modules/vuetify/src/components/VFooter/VFooter.sass");
-/* harmony import */ var _src_components_VFooter_VFooter_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_src_components_VFooter_VFooter_sass__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../VSheet/VSheet */ "./node_modules/vuetify/lib/components/VSheet/VSheet.js");
-/* harmony import */ var _mixins_applicationable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../mixins/applicationable */ "./node_modules/vuetify/lib/mixins/applicationable/index.js");
-/* harmony import */ var _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../mixins/ssr-bootable */ "./node_modules/vuetify/lib/mixins/ssr-bootable/index.js");
-/* harmony import */ var _util_mixins__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/mixins */ "./node_modules/vuetify/lib/util/mixins.js");
-/* harmony import */ var _util_helpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../util/helpers */ "./node_modules/vuetify/lib/util/helpers.js");
-// Styles
- // Components
-
- // Mixins
-
-
- // Utilities
-
-
-
-/* @vue/component */
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_util_mixins__WEBPACK_IMPORTED_MODULE_1__.default)(_VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__.default, (0,_mixins_applicationable__WEBPACK_IMPORTED_MODULE_3__.default)('footer', ['height', 'inset']), _mixins_ssr_bootable__WEBPACK_IMPORTED_MODULE_4__.default).extend({
-  name: 'v-footer',
-  props: {
-    height: {
-      default: 'auto',
-      type: [Number, String]
-    },
-    inset: Boolean,
-    padless: Boolean,
-    tag: {
-      type: String,
-      default: 'footer'
-    }
-  },
-  computed: {
-    applicationProperty() {
-      return this.inset ? 'insetFooter' : 'footer';
-    },
-
-    classes() {
-      return { ..._VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__.default.options.computed.classes.call(this),
-        'v-footer--absolute': this.absolute,
-        'v-footer--fixed': !this.absolute && (this.app || this.fixed),
-        'v-footer--padless': this.padless,
-        'v-footer--inset': this.inset
-      };
-    },
-
-    computedBottom() {
-      if (!this.isPositioned) return undefined;
-      return this.app ? this.$vuetify.application.bottom : 0;
-    },
-
-    computedLeft() {
-      if (!this.isPositioned) return undefined;
-      return this.app && this.inset ? this.$vuetify.application.left : 0;
-    },
-
-    computedRight() {
-      if (!this.isPositioned) return undefined;
-      return this.app && this.inset ? this.$vuetify.application.right : 0;
-    },
-
-    isPositioned() {
-      return Boolean(this.absolute || this.fixed || this.app);
-    },
-
-    styles() {
-      const height = parseInt(this.height);
-      return { ..._VSheet_VSheet__WEBPACK_IMPORTED_MODULE_2__.default.options.computed.styles.call(this),
-        height: isNaN(height) ? height : (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(height),
-        left: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedLeft),
-        right: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedRight),
-        bottom: (0,_util_helpers__WEBPACK_IMPORTED_MODULE_5__.convertToUnit)(this.computedBottom)
-      };
-    }
-
-  },
-  methods: {
-    updateApplication() {
-      const height = parseInt(this.height);
-      return isNaN(height) ? this.$el ? this.$el.clientHeight : 0 : height;
-    }
-
-  },
-
-  render(h) {
-    const data = this.setBackgroundColor(this.color, {
-      staticClass: 'v-footer',
-      class: this.classes,
-      style: this.styles
-    });
-    return h(this.tag, data, this.$slots.default);
-  }
-
-}));
-//# sourceMappingURL=VFooter.js.map
 
 /***/ }),
 
