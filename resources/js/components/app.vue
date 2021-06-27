@@ -10,10 +10,21 @@
                   Home
                </v-tab>
                <v-tab to="/about">
-                  <v-icon left>mdi-information</v-icon>About
+                  <v-icon left>mdi-information</v-icon>
+                  About
+               </v-tab>               
+               <v-tab to="/login">
+                  <v-icon left>mdi-login</v-icon>
+                  Login
                </v-tab>
-               <v-tab>Link 1</v-tab>
-               <v-tab>Logout</v-tab>
+               <v-tab to="/register">
+                  <v-icon left>mdi-account-plus</v-icon>
+                  Register
+               </v-tab>
+               <v-tab to="/logout">
+                  <v-icon left>mdi-power</v-icon>
+                  Logout
+               </v-tab>
             </v-tabs>
          </v-app-bar>
          <!-- v-main is the main content area e.g background -->
