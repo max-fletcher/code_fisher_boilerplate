@@ -10,7 +10,7 @@
       <v-text-field v-model="password" :rules="passwordRules" label="Password" type="password" required></v-text-field>
 
       <v-text-field
-         v-model="confirmPassword"
+         v-model="password_confirmation"
          :rules="[confirmPasswordRules, passwordConfirmationRule]"
          label="Confirm Password"
          type="password"
@@ -31,7 +31,7 @@
          <span>{{ this.name }}</span><br>
          <span>{{ this.email }}</span><br>
          <span>{{ this.password }}</span><br>
-         <span>{{ this.confirmPassword }}</span>
+         <span>{{ this.password_confirmation }}</span>
       </div>
    </v-form>
 </div>
@@ -56,7 +56,7 @@ export default {
          (v) =>
             (v && v.length >= 8) || "Password must be more than 8 characters",
       ],
-      confirmPassword: "",
+      password_confirmation: "",
       confirmPasswordRules: [
          (v) => !!v || "Password Confirmation is required",
          (v) => (!!v && password === v) || "Passwords do not match",
@@ -80,14 +80,20 @@ export default {
       submitForm() {
          this.validation = this.$refs.form.validate();
          if( this.$refs.form.validate() ){
-            axios.post('/api/registeraccount', {
+            axios.post('/api/register', {
                name: this.name,
                email: this.email,
-               password: this.password
+               password: this.password,
+               password_confirmation: this.password_confirmation
                })
             .then(()=>{
+               this.name = ''
+               this.email = ''
+               this.password = ''
+               this.password_confirmation = ''
                this.dummy = 'Post Request Sent Successfully !!'
-               this.$router.push('/about')
+               console.log('Post Request Sent Successfully !!')
+               //this.$router.push('/about')
                // same as this.$router.push({ name: 'About'}) where the name is defined in router.js so its a named
                // route
             })
@@ -106,7 +112,7 @@ export default {
    computed: {
       passwordConfirmationRule() {
          return () =>
-            this.password === this.confirmPassword || "Password must match";
+            this.password === this.password_confirmation || "Password must match";
       },
    },
 };

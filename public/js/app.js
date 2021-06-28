@@ -1958,7 +1958,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 // import TopNav from './topnav'
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2316,7 +2315,7 @@ __webpack_require__.r(__webpack_exports__);
       }, function (v) {
         return v && v.length >= 8 || "Password must be more than 8 characters";
       }],
-      confirmPassword: "",
+      password_confirmation: "",
       confirmPasswordRules: [function (v) {
         return !!v || "Password Confirmation is required";
       }, function (v) {
@@ -2345,16 +2344,20 @@ __webpack_require__.r(__webpack_exports__);
       this.validation = this.$refs.form.validate();
 
       if (this.$refs.form.validate()) {
-        axios.post('/api/registeraccount', {
+        axios.post('/api/register', {
           name: this.name,
           email: this.email,
-          password: this.password
+          password: this.password,
+          password_confirmation: this.password_confirmation
         }).then(function () {
+          _this.name = '';
+          _this.email = '';
+          _this.password = '';
+          _this.password_confirmation = '';
           _this.dummy = 'Post Request Sent Successfully !!';
-
-          _this.$router.push('/about'); // same as this.$router.push({ name: 'About'}) where the name is defined in router.js so its a named
+          console.log('Post Request Sent Successfully !!'); //this.$router.push('/about')
+          // same as this.$router.push({ name: 'About'}) where the name is defined in router.js so its a named
           // route
-
         })["catch"](function (error) {
           _this.errors = error.response.data.errors;
         }); //this.$router.push()
@@ -2368,7 +2371,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       return function () {
-        return _this2.password === _this2.confirmPassword || "Password must match";
+        return _this2.password === _this2.password_confirmation || "Password must match";
       };
     }
   }
@@ -21208,13 +21211,6 @@ var render = function() {
                         {
                           attrs: {
                             "active-class": "deep-purple--text text--accent-4"
-                          },
-                          model: {
-                            value: _vm.group,
-                            callback: function($$v) {
-                              _vm.group = $$v
-                            },
-                            expression: "group"
                           }
                         },
                         [
@@ -21900,11 +21896,11 @@ var render = function() {
               required: ""
             },
             model: {
-              value: _vm.confirmPassword,
+              value: _vm.password_confirmation,
               callback: function($$v) {
-                _vm.confirmPassword = $$v
+                _vm.password_confirmation = $$v
               },
-              expression: "confirmPassword"
+              expression: "password_confirmation"
             }
           }),
           _vm._v(" "),
@@ -21971,7 +21967,7 @@ var render = function() {
             _c("span", [_vm._v(_vm._s(this.password))]),
             _c("br"),
             _vm._v(" "),
-            _c("span", [_vm._v(_vm._s(this.confirmPassword))])
+            _c("span", [_vm._v(_vm._s(this.password_confirmation))])
           ])
         ],
         1

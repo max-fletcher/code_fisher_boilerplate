@@ -27,8 +27,7 @@
          <v-main class="grey lighten-3">
             <v-navigation-drawer v-model="toggleSidebar" absolute temporary>
                <v-list nav dense>
-                  <v-list-item-group
-                     v-model="group"
+                  <v-list-item-group                     
                      active-class="deep-purple--text text--accent-4"
                   >
                      <v-list-item>
