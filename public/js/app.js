@@ -1959,11 +1959,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 // import TopNav from './topnav'
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2115,9 +2110,91 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
-    return {};
+    return {
+      email: "",
+      emailRules: [function (v) {
+        return !!v || "E-mail is required";
+      }, function (v) {
+        return /.+@.+\..+/.test(v) || "E-mail must be valid";
+      }],
+      password: "",
+      passwordRules: [function (v) {
+        return !!v || "Password is required";
+      }, function (v) {
+        return v && v.length >= 8 || "Password must be more than 8 characters";
+      }],
+      errors: [],
+      dummy: '',
+      validation: ''
+    };
+  },
+  methods: {
+    validate: function validate() {
+      this.$refs.form.validate();
+    },
+    reset: function reset() {
+      this.$refs.form.reset();
+      this.dummy = '';
+    },
+    resetValidation: function resetValidation() {
+      this.$refs.form.resetValidation();
+      this.dummy = '';
+    },
+    submitForm: function submitForm() {
+      var _this = this;
+
+      this.validation = this.$refs.form.validate();
+
+      if (this.$refs.form.validate()) {
+        axios.post('/api/login', {
+          email: this.email,
+          password: this.password
+        }).then(function () {
+          _this.dummy = 'Login Post Request Sent Successfully !!';
+
+          _this.$router.push('/about');
+        })["catch"](function (error) {
+          _this.errors = error.response.data.errors;
+        });
+      } else {//false
+        //this.$refs.form.validate();
+      }
+    }
+  },
+  computed: {
+    passwordConfirmationRule: function passwordConfirmationRule() {
+      var _this2 = this;
+
+      return function () {
+        return _this2.password === _this2.confirmPassword || "Password must match";
+      };
+    }
   }
 });
 
@@ -2218,30 +2295,36 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      valid: true,
-      name: '',
+      name: "",
       nameRules: [function (v) {
-        return !!v || 'Name is required';
+        return !!v || "Name is required";
       }, function (v) {
-        return v && v.length <= 10 || 'Name must be less than 10 characters';
+        return v && v.length >= 8 || "Name must be more than 8 characters";
       }],
-      email: '',
+      email: "",
       emailRules: [function (v) {
-        return !!v || 'E-mail is required';
+        return !!v || "E-mail is required";
       }, function (v) {
-        return /.+@.+\..+/.test(v) || 'E-mail must be valid';
-      }]
+        return /.+@.+\..+/.test(v) || "E-mail must be valid";
+      }],
+      password: "",
+      passwordRules: [function (v) {
+        return !!v || "Password is required";
+      }, function (v) {
+        return v && v.length >= 8 || "Password must be more than 8 characters";
+      }],
+      confirmPassword: "",
+      confirmPasswordRules: [function (v) {
+        return !!v || "Password Confirmation is required";
+      }, function (v) {
+        return !!v && password === v || "Passwords do not match";
+      }],
+      errors: [],
+      dummy: '',
+      validation: ''
     };
   },
   methods: {
@@ -2250,9 +2333,43 @@ __webpack_require__.r(__webpack_exports__);
     },
     reset: function reset() {
       this.$refs.form.reset();
+      this.dummy = '';
     },
     resetValidation: function resetValidation() {
       this.$refs.form.resetValidation();
+      this.dummy = '';
+    },
+    submitForm: function submitForm() {
+      var _this = this;
+
+      this.validation = this.$refs.form.validate();
+
+      if (this.$refs.form.validate()) {
+        axios.post('/api/registeraccount', {
+          name: this.name,
+          email: this.email,
+          password: this.password
+        }).then(function () {
+          _this.dummy = 'Post Request Sent Successfully !!';
+
+          _this.$router.push('/about'); // same as this.$router.push({ name: 'About'}) where the name is defined in router.js so its a named
+          // route
+
+        })["catch"](function (error) {
+          _this.errors = error.response.data.errors;
+        }); //this.$router.push()
+      } else {//false
+          //this.$refs.form.validate();
+        }
+    }
+  },
+  computed: {
+    passwordConfirmationRule: function passwordConfirmationRule() {
+      var _this2 = this;
+
+      return function () {
+        return _this2.password === _this2.confirmPassword || "Password must match";
+      };
     }
   }
 });
@@ -2354,36 +2471,42 @@ __webpack_require__.r(__webpack_exports__);
     path: '*',
     title: "Not Found",
     component: _components_notfound__WEBPACK_IMPORTED_MODULE_5__.default,
+    name: 'NotFound',
     meta: {
       title: '404 Not Found'
     }
   }, {
     path: '/',
     component: _components_home__WEBPACK_IMPORTED_MODULE_0__.default,
+    name: 'Home',
     meta: {
       title: 'Home'
     }
   }, {
     path: '/about',
     component: _components_about__WEBPACK_IMPORTED_MODULE_1__.default,
+    name: 'About',
     meta: {
       title: 'About Us'
     }
   }, {
     path: '/login',
     component: _components_login__WEBPACK_IMPORTED_MODULE_2__.default,
+    name: 'Login',
     meta: {
       title: 'Login'
     }
   }, {
     path: '/register',
     component: _components_register__WEBPACK_IMPORTED_MODULE_3__.default,
+    name: 'Register',
     meta: {
       title: 'Register'
     }
   }, {
     path: '/logout',
     component: _components_logout__WEBPACK_IMPORTED_MODULE_4__.default,
+    name: 'Logout',
     meta: {
       title: 'Logout'
     }
@@ -21012,7 +21135,7 @@ var render = function() {
                       _c("v-icon", { attrs: { left: "" } }, [
                         _vm._v("mdi-information")
                       ]),
-                      _vm._v("\n               About\n            ")
+                      _vm._v("About\n            ")
                     ],
                     1
                   ),
@@ -21024,7 +21147,7 @@ var render = function() {
                       _c("v-icon", { attrs: { left: "" } }, [
                         _vm._v("mdi-login")
                       ]),
-                      _vm._v("\n               Login\n            ")
+                      _vm._v("Login\n            ")
                     ],
                     1
                   ),
@@ -21036,7 +21159,7 @@ var render = function() {
                       _c("v-icon", { attrs: { left: "" } }, [
                         _vm._v("mdi-account-plus")
                       ]),
-                      _vm._v("\n               Register\n            ")
+                      _vm._v("Register\n            ")
                     ],
                     1
                   ),
@@ -21048,7 +21171,7 @@ var render = function() {
                       _c("v-icon", { attrs: { left: "" } }, [
                         _vm._v("mdi-power")
                       ]),
-                      _vm._v("\n               Logout\n            ")
+                      _vm._v("Logout\n            ")
                     ],
                     1
                   )
@@ -21524,7 +21647,119 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("Login Component")])
+  return _c(
+    "div",
+    [
+      _c(
+        "v-form",
+        { ref: "form", attrs: { "lazy-validation": "" } },
+        [
+          _c("v-text-field", {
+            attrs: {
+              rules: _vm.emailRules,
+              label: "E-mail",
+              type: "email",
+              required: ""
+            },
+            model: {
+              value: _vm.email,
+              callback: function($$v) {
+                _vm.email = $$v
+              },
+              expression: "email"
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors.email
+            ? _c("span", [_vm._v(_vm._s(_vm.errors.email[0]))])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              rules: _vm.passwordRules,
+              label: "Password",
+              type: "password",
+              required: ""
+            },
+            model: {
+              value: _vm.password,
+              callback: function($$v) {
+                _vm.password = $$v
+              },
+              expression: "password"
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors.password
+            ? _c("span", [_vm._v(_vm._s(_vm.errors.password[0]))])
+            : _vm._e(),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "success", type: "submit" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.submitForm.apply(null, arguments)
+                }
+              }
+            },
+            [_vm._v("Login")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "success" },
+              on: { click: _vm.validate }
+            },
+            [_vm._v("Validate")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "warning" },
+              on: { click: _vm.reset }
+            },
+            [_vm._v("Reset Form")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "info" },
+              on: { click: _vm.resetValidation }
+            },
+            [_vm._v("Reset Validation")]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", [
+            _c("span", [_vm._v(_vm._s(this.dummy))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.validation))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.email))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.password))]),
+            _c("br")
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -21600,70 +21835,146 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "v-form",
-    {
-      ref: "form",
-      attrs: { "lazy-validation": "" },
-      model: {
-        value: _vm.valid,
-        callback: function($$v) {
-          _vm.valid = $$v
-        },
-        expression: "valid"
-      }
-    },
+    "div",
     [
-      _c("v-text-field", {
-        attrs: {
-          counter: 10,
-          rules: _vm.nameRules,
-          label: "Name",
-          required: ""
-        },
-        model: {
-          value: _vm.name,
-          callback: function($$v) {
-            _vm.name = $$v
-          },
-          expression: "name"
-        }
-      }),
-      _vm._v(" "),
-      _c("v-text-field", {
-        attrs: { rules: _vm.emailRules, label: "E-mail", required: "" },
-        model: {
-          value: _vm.email,
-          callback: function($$v) {
-            _vm.email = $$v
-          },
-          expression: "email"
-        }
-      }),
-      _vm._v(" "),
       _c(
-        "v-btn",
-        {
-          staticClass: "mr-4",
-          attrs: { disabled: !_vm.valid, color: "success" },
-          on: { click: _vm.validate }
-        },
-        [_vm._v("\n    Validate\n  ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "v-btn",
-        {
-          staticClass: "mr-4",
-          attrs: { color: "error" },
-          on: { click: _vm.reset }
-        },
-        [_vm._v("\n    Reset Form\n  ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "v-btn",
-        { attrs: { color: "warning" }, on: { click: _vm.resetValidation } },
-        [_vm._v("\n    Reset Validation\n  ")]
+        "v-form",
+        { ref: "form", attrs: { "lazy-validation": "" } },
+        [
+          _c("v-text-field", {
+            attrs: { rules: _vm.nameRules, label: "Name", required: "" },
+            model: {
+              value: _vm.name,
+              callback: function($$v) {
+                _vm.name = $$v
+              },
+              expression: "name"
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors.name
+            ? _c("span", [_vm._v(_vm._s(_vm.errors.name[0]))])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              rules: _vm.emailRules,
+              label: "E-mail",
+              type: "email",
+              required: ""
+            },
+            model: {
+              value: _vm.email,
+              callback: function($$v) {
+                _vm.email = $$v
+              },
+              expression: "email"
+            }
+          }),
+          _vm._v(" "),
+          _vm.errors.email
+            ? _c("span", [_vm._v(_vm._s(_vm.errors.email[0]))])
+            : _vm._e(),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              rules: _vm.passwordRules,
+              label: "Password",
+              type: "password",
+              required: ""
+            },
+            model: {
+              value: _vm.password,
+              callback: function($$v) {
+                _vm.password = $$v
+              },
+              expression: "password"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-text-field", {
+            attrs: {
+              rules: [_vm.confirmPasswordRules, _vm.passwordConfirmationRule],
+              label: "Confirm Password",
+              type: "password",
+              required: ""
+            },
+            model: {
+              value: _vm.confirmPassword,
+              callback: function($$v) {
+                _vm.confirmPassword = $$v
+              },
+              expression: "confirmPassword"
+            }
+          }),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "success", type: "submit" },
+              on: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.submitForm.apply(null, arguments)
+                }
+              }
+            },
+            [_vm._v("Register")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "success" },
+              on: { click: _vm.validate }
+            },
+            [_vm._v("Validate")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "warning" },
+              on: { click: _vm.reset }
+            },
+            [_vm._v("Reset Form")]
+          ),
+          _vm._v(" "),
+          _c(
+            "v-btn",
+            {
+              staticClass: "mt-4",
+              attrs: { color: "info" },
+              on: { click: _vm.resetValidation }
+            },
+            [_vm._v("Reset Validation")]
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("div", [
+            _c("span", [_vm._v(_vm._s(this.dummy))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.validation))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.name))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.email))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.password))]),
+            _c("br"),
+            _vm._v(" "),
+            _c("span", [_vm._v(_vm._s(this.confirmPassword))])
+          ])
+        ],
+        1
       )
     ],
     1
@@ -38145,6 +38456,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _login_vue_vue_type_template_id_172b28a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login.vue?vue&type=template&id=172b28a4& */ "./resources/js/components/login.vue?vue&type=template&id=172b28a4&");
 /* harmony import */ var _login_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./login.vue?vue&type=script&lang=js& */ "./resources/js/components/login.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/vuetify-loader/lib/runtime/installComponents.js */ "./node_modules/vuetify-loader/lib/runtime/installComponents.js");
+/* harmony import */ var _node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuetify/lib/components/VBtn */ "./node_modules/vuetify/lib/components/VBtn/VBtn.js");
+/* harmony import */ var vuetify_lib_components_VForm__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vuetify/lib/components/VForm */ "./node_modules/vuetify/lib/components/VForm/VForm.js");
+/* harmony import */ var vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! vuetify/lib/components/VTextField */ "./node_modules/vuetify/lib/components/VTextField/VTextField.js");
 
 
 
@@ -38162,6 +38478,14 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
   null
   
 )
+
+/* vuetify-loader */
+;
+
+
+
+_node_modules_vuetify_loader_lib_runtime_installComponents_js__WEBPACK_IMPORTED_MODULE_3___default()(component, {VBtn: vuetify_lib_components_VBtn__WEBPACK_IMPORTED_MODULE_4__.default,VForm: vuetify_lib_components_VForm__WEBPACK_IMPORTED_MODULE_5__.default,VTextField: vuetify_lib_components_VTextField__WEBPACK_IMPORTED_MODULE_6__.default})
+
 
 /* hot reload */
 if (false) { var api; }

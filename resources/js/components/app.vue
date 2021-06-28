@@ -10,20 +10,16 @@
                   Home
                </v-tab>
                <v-tab to="/about">
-                  <v-icon left>mdi-information</v-icon>
-                  About
-               </v-tab>               
+                  <v-icon left>mdi-information</v-icon>About
+               </v-tab>
                <v-tab to="/login">
-                  <v-icon left>mdi-login</v-icon>
-                  Login
+                  <v-icon left>mdi-login</v-icon>Login
                </v-tab>
                <v-tab to="/register">
-                  <v-icon left>mdi-account-plus</v-icon>
-                  Register
+                  <v-icon left>mdi-account-plus</v-icon>Register
                </v-tab>
                <v-tab to="/logout">
-                  <v-icon left>mdi-power</v-icon>
-                  Logout
+                  <v-icon left>mdi-power</v-icon>Logout
                </v-tab>
             </v-tabs>
          </v-app-bar>
@@ -83,7 +79,6 @@
       </v-app>
    </div>
 </template>
-
 <script>
 // import TopNav from './topnav'
 export default {

@@ -1,75 +1,113 @@
 <template>
-  <v-form
-    ref="form"
-    v-model="valid"
-    lazy-validation
-  >
-    <v-text-field
-      v-model="name"
-      :counter="10"
-      :rules="nameRules"
-      label="Name"
-      required
-    ></v-text-field>
+<div>
+   <v-form ref="form" lazy-validation>
+      <v-text-field v-model="name" :rules="nameRules" label="Name" required></v-text-field>
+      <span v-if="errors.name">{{ errors.name[0] }}</span>
 
-    <v-text-field
-      v-model="email"
-      :rules="emailRules"
-      label="E-mail"
-      required
-    ></v-text-field>
+      <v-text-field v-model="email" :rules="emailRules" label="E-mail" type="email" required></v-text-field>
+      <span v-if="errors.email">{{ errors.email[0] }}</span>
 
-    <v-btn
-      :disabled="!valid"
-      color="success"
-      class="mr-4"
-      @click="validate"
-    >
-      Validate
-    </v-btn>
+      <v-text-field v-model="password" :rules="passwordRules" label="Password" type="password" required></v-text-field>
 
-    <v-btn
-      color="error"
-      class="mr-4"
-      @click="reset"
-    >
-      Reset Form
-    </v-btn>
+      <v-text-field
+         v-model="confirmPassword"
+         :rules="[confirmPasswordRules, passwordConfirmationRule]"
+         label="Confirm Password"
+         type="password"
+         required
+      ></v-text-field>
 
-    <v-btn
-      color="warning"
-      @click="resetValidation"
-    >
-      Reset Validation
-    </v-btn>
-  </v-form>
+      <v-btn color="success" class="mt-4" @click.prevent="submitForm" type="submit">Register</v-btn>
+
+      <v-btn color="success" class="mt-4" @click="validate">Validate</v-btn>
+
+      <v-btn color="warning" class="mt-4" @click="reset">Reset Form</v-btn>
+
+      <v-btn color="info" class="mt-4" @click="resetValidation">Reset Validation</v-btn>
+      <br>
+      <div>
+         <span>{{ this.dummy }}</span><br>
+         <span>{{ this.validation }}</span><br>
+         <span>{{ this.name }}</span><br>
+         <span>{{ this.email }}</span><br>
+         <span>{{ this.password }}</span><br>
+         <span>{{ this.confirmPassword }}</span>
+      </div>
+   </v-form>
+</div>
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      valid: true,
-      name: '',
+export default {
+   data: () => ({      
+      name: "",
       nameRules: [
-        v => !!v || 'Name is required',
-        v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+         (v) => !!v || "Name is required",
+         (v) => (v && v.length >= 8) || "Name must be more than 8 characters",
       ],
-      email: '',
+      email: "",
       emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
-      ],            
-    }),
-    methods: {
-      validate () {
-        this.$refs.form.validate()
+         (v) => !!v || "E-mail is required",
+         (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
+      password: "",
+      passwordRules: [
+         (v) => !!v || "Password is required",
+         (v) =>
+            (v && v.length >= 8) || "Password must be more than 8 characters",
+      ],
+      confirmPassword: "",
+      confirmPasswordRules: [
+         (v) => !!v || "Password Confirmation is required",
+         (v) => (!!v && password === v) || "Passwords do not match",
+      ],
+      errors: [],
+      dummy: '',
+      validation: ''
+   }),
+   methods: {
+      validate() {
+         this.$refs.form.validate();
       },
-      reset () {
-        this.$refs.form.reset()
+      reset() {
+         this.$refs.form.reset();
+         this.dummy = ''
       },
-      resetValidation () {
-        this.$refs.form.resetValidation()
+      resetValidation() {
+         this.$refs.form.resetValidation();
+         this.dummy = ''
       },
-    },
-  }
-</script>
+      submitForm() {
+         this.validation = this.$refs.form.validate();
+         if( this.$refs.form.validate() ){
+            axios.post('/api/registeraccount', {
+               name: this.name,
+               email: this.email,
+               password: this.password
+               })
+            .then(()=>{
+               this.dummy = 'Post Request Sent Successfully !!'
+               this.$router.push('/about')
+               // same as this.$router.push({ name: 'About'}) where the name is defined in router.js so its a named
+               // route
+            })
+            .catch((error)=> {
+               this.errors = error.response.data.errors;
+            })
+
+            //this.$router.push()
+         }
+         else{
+            //false
+            //this.$refs.form.validate();
+         }
+      },
+   },
+   computed: {
+      passwordConfirmationRule() {
+         return () =>
+            this.password === this.confirmPassword || "Password must match";
+      },
+   },
+};
+</script> 
