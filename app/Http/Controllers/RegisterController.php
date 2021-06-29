@@ -22,6 +22,6 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
-        return response("Some Text", 200);
+        return response("Some Text", 201);
     }
 }

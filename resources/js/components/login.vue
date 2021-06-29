@@ -59,22 +59,25 @@ export default {
       submitForm() {
          this.validation = this.$refs.form.validate();
          if( this.$refs.form.validate() ){
-            axios.post('/api/login', {               
-               email: this.email,
-               password: this.password
+            axios.get('/sanctum/csrf-cookie').then(response => {
+                // Login...
+               axios.post('/api/login', {
+                  email: this.email,
+                  password: this.password
+                  })
+               .then((res)=>{
+                  this.dummy = 'Login Post Request Sent Successfully !!';
+                  console.log(res)
+                  this.$router.push('/dashboard')
                })
-            .then(()=>{
-               this.dummy = 'Login Post Request Sent Successfully !!'
-               this.$router.push('/about')
-            })
-            .catch((error)=> {
-               this.errors = error.response.data.errors;
-            })
-
+               .catch((error)=> {
+                  this.errors = error.response.data.errors;
+               })
+            });
          }
          else{
             //false
-            //this.$refs.form.validate();
+            this.$refs.form.validate();
          }
       },
    },

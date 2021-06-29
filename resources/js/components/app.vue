@@ -18,7 +18,7 @@
                <v-tab to="/register">
                   <v-icon left>mdi-account-plus</v-icon>Register
                </v-tab>
-               <v-tab to="/logout">
+               <v-tab @click.prevent="logout">
                   <v-icon left>mdi-power</v-icon>Logout
                </v-tab>
             </v-tabs>
@@ -84,6 +84,14 @@ export default {
    data: () => ({
       toggleSidebar: false,
    }),
+   methods:{
+      logout(){
+         axios.post('/api/logout').then(()=>{
+            this.$routes.push('/home')
+            //this.$routes.push({name: 'Login'}) will work since Login is a named route
+         })
+      }
+   }
 };
 </script>
 

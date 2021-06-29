@@ -43,7 +43,7 @@ export default {
       name: "",
       nameRules: [
          (v) => !!v || "Name is required",
-         (v) => (v && v.length >= 8) || "Name must be more than 8 characters",
+         (v) => (v && v.length >= 3) || "Name must be more than 3 characters",
       ],
       email: "",
       emailRules: [
@@ -91,6 +91,7 @@ export default {
                this.email = ''
                this.password = ''
                this.password_confirmation = ''
+               this.$refs.form.resetValidation()
                this.dummy = 'Post Request Sent Successfully !!'
                console.log('Post Request Sent Successfully !!')
                //this.$router.push('/about')

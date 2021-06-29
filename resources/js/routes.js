@@ -2,7 +2,7 @@ import Home from "./components/home";
 import About from "./components/about";
 import Login from "./components/login";
 import Register from "./components/register";
-import Logout from "./components/logout";
+import Dashboard from "./components/dashboard";
 import NotFound from "./components/notfound";
 
 export default{
@@ -41,10 +41,10 @@ export default{
          meta: { title: 'Register' }
       },
       {
-         path: '/logout',
-         component: Logout,
-         name: 'Logout',
-         meta: { title: 'Logout' }
-      },
+         path: '/dashboard',
+         component: Dashboard,
+         name: 'Dashboard',
+         meta: { title: 'Dashboard' }
+      },      
    ]
 }
